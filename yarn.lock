@@ -6281,6 +6281,11 @@ svgo@^0.7.0:
     sax "~1.2.1"
     whet.extend "~0.9.9"
 
+swiper@^3.4.2:
+  version "3.4.2"
+  resolved "http://r.cnpmjs.org/swiper/download/swiper-3.4.2.tgz#39d6b410b1a39833e1f72d3b72999df5f5e38392"
+  integrity sha1-Oda0ELGjmDPh9y07cpmd9fXjg5I=
+
 table@4.0.2:
   version "4.0.2"
   resolved "http://r.cnpmjs.org/table/download/table-4.0.2.tgz#a33447375391e766ad34d3486e6e2aedc84d2e36"
@@ -6648,6 +6653,13 @@ vm-browserify@0.0.4:
   integrity sha1-XX6kW7755Kb/ZflUOOCofDV9WnM=
   dependencies:
     indexof "0.0.1"
+
+vue-awesome-swiper@2.6.7:
+  version "2.6.7"
+  resolved "http://r.cnpmjs.org/vue-awesome-swiper/download/vue-awesome-swiper-2.6.7.tgz#23b12cf107503305c267df3c7c2903fb39896cd0"
+  integrity sha1-I7Es8QdQMwXCZ988fCkD+zmJbNA=
+  dependencies:
+    swiper "^3.4.2"
 
 vue-eslint-parser@^2.0.3:
   version "2.0.3"

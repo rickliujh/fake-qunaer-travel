@@ -45,5 +45,5 @@ export default {
   color #eee
   padding-bottom 26.7% // 通过width计算高度
   .swiper-img
-    width: 100%
+    width 100%
 </style>

@@ -36,7 +36,7 @@ export default {
   },
   methods: {
     getHomeInfo () {
-      Axios.get('/api/index.json')
+      Axios.get('/api/index1.json')
         .then(this.getHomeInfoSucc)
     },
     getHomeInfoSucc (res) {

@@ -88,7 +88,7 @@ export default {
     border-radius .06rem
     color #666
 .search-content
-  z-index 1
+  // z-index 1
   overflow hidden
   position absolute
   top 1.59rem

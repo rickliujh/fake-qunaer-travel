@@ -45,7 +45,7 @@ export default {
   display flex
   // flex-direction column
   // justify-content center
-  // z-index 99
+  z-index 99
   position fixed
   top 0
   height 100%

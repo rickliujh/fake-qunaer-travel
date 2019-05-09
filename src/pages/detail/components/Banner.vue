@@ -4,7 +4,7 @@
       <img class="banner-img" src="http://img1.qunarzz.com/sight/p0/1904/a2/a23ae48aac0c0ab2a3.water.jpg_600x330_405288ba.jpg">
       <div class="banner-info">
         <div class="banner-title">西溪国家湿地洪园</div>
-        <div class="banner-number"><span class="iconfont banner-icon">&#xe730;</span> 59</div>
+        <div class="banner-number"><span class="iconfont banner-icon">&#xe730;</span> {{imgs.length}}</div>
       </div>
     </div>
     <common-gallery :imgs="imgs" v-show="isShowGallery" @galleryClick="toggleGallery"></common-gallery>

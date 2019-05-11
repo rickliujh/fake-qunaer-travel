@@ -2,8 +2,8 @@
   <div class="container">
     <detail-banner></detail-banner>
     <detail-header></detail-header>
-    <!-- <detail-introduction></detail-introduction> -->
-    <detail-list :list="list"></detail-list>
+    <detail-introduction></detail-introduction>
+    <!-- <detail-list :list="list"></detail-list> -->
     <div class="content"></div>
   </div>
 </template>
@@ -11,14 +11,14 @@
 <script>
 import DetailBanner from './components/Banner'
 import DetailHeader from './components/Header'
-// import DetailIntroduction from './components/Introduction'
+import DetailIntroduction from './components/Introduction'
 import DetailList from './components/List'
 export default {
   name: 'Detail',
   components: {
     DetailBanner,
     DetailHeader,
-    // DetailIntroduction,
+    DetailIntroduction,
     DetailList
   },
   data () {

@@ -57,6 +57,7 @@ export default {
       flex 1
       font-size .38rem
       padding 0 .2rem
+      margin-bottom .1rem
     .banner-number
       align-self center
       padding 0 .4rem

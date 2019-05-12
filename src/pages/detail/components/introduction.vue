@@ -1,6 +1,6 @@
 <template>
   <div class="introduction">
-    <div class="info">
+    <div class="info border-bottom">
       <div class="info-item border-right">
         <div>
           <span class="item-score">5.0</span>
@@ -20,7 +20,7 @@
         <div class="iconfont go-icon">&#xe624;</div>
       </div>
     </div>
-    <div class="address border-top">
+    <div class="address">
       <div>
         <div class="iconfont address-icon">&#xe78e;</div>
         <div class="address-text">
@@ -41,11 +41,12 @@ export default {
 <style lang="stylus" scoped>
 .introduction
   position relative
-  padding .1rem .2rem
+  overflow hidden
+  padding 0 .2rem
   bottom .1rem
   // width 100%
-  height 0
-  padding-bottom 32%
+  // height 0
+  // padding-bottom 32%
   border-radius .1rem .1rem 0 0
   background #fff
   .go-icon
@@ -57,7 +58,8 @@ export default {
   .info
     display flex
     width 100%
-    padding .1rem 0
+    padding .2rem 0
+    margin-bottom .2rem
     .info-item
       position relative
       flex 1
@@ -88,8 +90,8 @@ export default {
         color #9e9e9e
   .address
     position relative
-    margin-top .2rem
-    padding-top .3rem
+    margin .2rem 0
+    padding .2rem 0
     .address-icon
       position absolute
       top .28rem
@@ -98,5 +100,5 @@ export default {
       padding-left .56rem
       padding-right .56rem
     .address-go-icon
-      top .44rem
+      top .25rem
 </style>

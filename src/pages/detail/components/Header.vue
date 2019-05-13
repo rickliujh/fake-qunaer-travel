@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div ref="header">
     <router-link tag="div" to="/" class="header-abs" v-show="isShowAbs">
       <div class="iconfont back-icon">&#xe624;</div>
     </router-link>
@@ -25,7 +25,8 @@ export default {
   },
   methods: {
     handleScroll () {
-      const top = document.documentElement.scrollTop
+      const top = document.body.scrollTop || document.documentElement.scrollTop
+      console.log(top)
       if (top > 60) {
         this.isShowAbs = false
         let opacity = top / 180
@@ -36,6 +37,7 @@ export default {
     }
   },
   activated () {
+    this.fuck = 100
     window.addEventListener('scroll', this.handleScroll)
   },
   deactivated () {

@@ -4,10 +4,10 @@
       <div class="iconfont back-icon">&#xe624;</div>
     </router-link>
     <div class="header-fixed" v-show="!isShowAbs" :style="opacityStyle">
-      景点详情
+      {{title}}
       <router-link to="/">
-      <div class="iconfont header-fixed-back">&#xe624;</div>
-    </router-link>
+        <div class="iconfont header-fixed-back">&#xe624;</div>
+      </router-link>
     </div>
   </div>
 </template>
@@ -15,6 +15,9 @@
 <script>
 export default {
   name: 'DetailHeader',
+  props: {
+    title: String
+  },
   data () {
     return {
       isShowAbs: true,
@@ -26,7 +29,6 @@ export default {
   methods: {
     handleScroll () {
       const top = document.body.scrollTop || document.documentElement.scrollTop
-      console.log(top)
       if (top > 60) {
         this.isShowAbs = false
         let opacity = top / 180
@@ -37,7 +39,6 @@ export default {
     }
   },
   activated () {
-    this.fuck = 100
     window.addEventListener('scroll', this.handleScroll)
   },
   deactivated () {

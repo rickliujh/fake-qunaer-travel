@@ -1,15 +1,15 @@
 <template>
   <div>
     <div class="banner" @click="toggleGallery">
-      <img class="banner-img" src="http://img1.qunarzz.com/sight/p0/1904/a2/a23ae48aac0c0ab2a3.water.jpg_600x330_405288ba.jpg">
+      <img class="banner-img" :src="img">
       <div class="banner-info">
-        <div class="banner-title">西溪国家湿地洪园</div>
-        <div class="banner-number"><span class="iconfont banner-icon">&#xe730;</span> {{imgs.length}}</div>
+        <div class="banner-title">{{title}}</div>
+        <div class="banner-number"><span class="iconfont banner-icon">&#xe730;</span> {{galleryImgs.length}}</div>
       </div>
     </div>
     <fade-animation>
       <common-gallery
-        :imgs="imgs"
+        :imgs="galleryImgs"
         v-show="isShowGallery"
         @galleryClick="toggleGallery"
       ></common-gallery>
@@ -26,13 +26,14 @@ export default {
     CommonGallery,
     FadeAnimation
   },
+  props: {
+    title: String,
+    img: String,
+    galleryImgs: Array
+  },
   data () {
     return {
-      isShowGallery: false,
-      imgs: [
-        'http://img1.qunarzz.com/sight/p0/1904/6d/6dd775aa7d985158a3.water.jpg_r_800x800_ba5cbbe0.jpg',
-        'http://img1.qunarzz.com/sight/p0/1904/87/87df7b4b2415ca29a3.water.jpg_r_800x800_0032b2e7.jpg'
-      ]
+      isShowGallery: false
     }
   },
   methods: {

@@ -14,20 +14,28 @@
       </div>
       <div
         class="ticket-item border-bottom"
-        v-for="(ticket, key) of item.ticketType"
+        v-for="(ticketInfo, key) of item.ticketType"
         :key="key"
       >
         <div
           class="ticket-name border-bottom"
           @click="handleTicketClick(index,key)"
         >
-          <h5 class="ticket-name-text">{{ticket.title}}</h5>
+          <h5 class="ticket-name-text">{{ticketInfo.title}}</h5>
           <div class="ticket-name-price">
-            ￥<em class="ticket-name-num">{{ticket.price}}</em><span class="ticket-name-word">起</span>
+            ￥<em class="ticket-name-num">{{ticketInfo.price}}</em><span class="ticket-name-word">起</span>
           </div>
           <div class="iconfont ticket-name-icon">&#xe624;</div>
         </div>
-        <ticket-detail v-show="showDetailFlags[index][key].isShow"></ticket-detail>
+        <in-out-animation>
+          <div v-show="showDetailFlags[index][key].isShow">
+            <ticket-detail
+              :ticketDetail="ticket"
+              v-for="(ticket, idx) of ticketInfo.tickets"
+              :key="idx"
+            ></ticket-detail>
+          </div>
+        </in-out-animation>
       </div>
     </div>
   </div>
@@ -35,13 +43,15 @@
 
 <script>
 import TicketDetail from './TicketDetail'
+import InOutAnimation from '@/common/animations/inout/InOutAnimation'
 export default {
   name: 'DetailTicket',
   props: {
     list: Array
   },
   components: {
-    TicketDetail
+    TicketDetail,
+    InOutAnimation
   },
   data () {
     return {

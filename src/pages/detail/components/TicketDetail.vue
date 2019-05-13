@@ -1,18 +1,22 @@
 <template>
-  <div class="ticket">
+  <div class="ticket border-bottom">
     <div class="ticket-item-right">
-      <h6 class="ticket-title">【龙舌嘴入口】西溪洪园成人票</h6>
+      <h6 class="ticket-title">{{ticketDetail.title}}</h6>
       <div class="ticket-status">
         <img class="ticket-status-icon" src="https://img1.qunarzz.com/piao/fusion/1804/25/792e9929973a9902.png">
-        可订明日
+        {{ticketDetail.status}}
       </div>
       <div class="ticket-explanation">
-        <span class="ticket-explanation-item border">
-          随时退
+        <span
+          class="ticket-explanation-item border"
+          v-for="(item, index) of ticketDetail.explanation"
+          :key="index"
+        >
+          {{item.text}}
         </span>
       </div>
       <div class="ticket-sell">
-        <div class="ticket-sell-company">去哪儿直销</div>
+        <div class="ticket-sell-company">{{ticketDetail.company}}</div>
         <span class="border-right"></span>
         <div class="ticket-sell-notice">订票须知</div>
         <div class="iconfont ticket-sell-icon">&#xe624;</div>
@@ -20,7 +24,7 @@
     </div>
     <div class="ticket-item-left">
       <div class="ticket-price">
-        ￥<span class="ticket-price-num">70</span>
+        ￥<span class="ticket-price-num">{{ticketDetail.price}}</span>
       </div>
       <div class="ticket-buy-btn">预定</div>
     </div>
@@ -29,7 +33,10 @@
 
 <script>
 export default {
-  name: 'DetailTicketDetail'
+  name: 'DetailTicketDetail',
+  props: {
+    ticketDetail: Object
+  }
 }
 </script>
 
@@ -38,7 +45,7 @@ export default {
   display flex
   align-items center
   // width 100%
-  background #eee
+  background #f5f5f5
   padding .2rem
   .ticket-item-right
     flex 2.92
@@ -62,6 +69,7 @@ export default {
       .ticket-explanation-item
         display inline-block
         margin-top .08rem
+        margin-right .1rem
         padding 0 .04rem
         font-size .2rem
         color #00afc7

@@ -3,7 +3,7 @@
     <detail-banner></detail-banner>
     <detail-header></detail-header>
     <detail-introduction></detail-introduction>
-    <!-- <detail-list :list="list"></detail-list> -->
+    <detail-ticket :list="ticketList"></detail-ticket>
     <div class="content"></div>
   </div>
 </template>
@@ -12,26 +12,27 @@
 import DetailBanner from './components/Banner'
 import DetailHeader from './components/Header'
 import DetailIntroduction from './components/Introduction'
-import DetailList from './components/List'
+import DetailTicket from './components/Ticket'
 export default {
   name: 'Detail',
   components: {
     DetailBanner,
     DetailHeader,
     DetailIntroduction,
-    DetailList
+    DetailTicket
   },
   data () {
     return {
-      list: [{
-        title: '成人票',
-        children: [{
-          title: '成人三张联票',
-          'children': [{
-            'title': '成人三馆联票 - 某一连锁店销售'
-          }]
+      ticketList: [{
+        title: '龙舌嘴&洪园入口',
+        ticketType: [{
+          title: '西溪湿地成人门票（龙舌嘴主入口）',
+          price: '70',
+          tickets: {}
         }, {
-          title: '成人五张联票'
+          title: '西溪湿地成人门车船联票（龙舌嘴主入口）',
+          price: '120',
+          tickets: {}
         }]
       }, {
         title: '学生票'

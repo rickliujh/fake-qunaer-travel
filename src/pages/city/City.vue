@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="city">
     <city-header></city-header>
     <city-search :cities="cities"></city-search>
     <city-list
@@ -60,5 +60,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-
+.city
+  height 100%
+  // background #f5f5f5
 </style>

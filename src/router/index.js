@@ -11,22 +11,35 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Home,
+      meta: {
+        keepAlive: true
+      }
     }, {
       path: '/city',
       name: 'city',
-      component: City
+      component: City,
+      meta: {
+        keepAlive: true
+      }
     }, {
       path: '/detail/:id',
       name: 'detail',
-      component: Detail
+      component: Detail,
+      meta: {
+        keepAlive: true
+      }
     }
   ],
   scrollBehavior (to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition
     } else {
-      return { x: 0, y: 0 }
+      console.log(from.meta.keepAlive)
+      if (from.meta.keepAlive) {
+        from.meta.savedPosition = document.body.scrollTop || document.documentElement.scrollTop
+      }
+      return { x: 0, y: to.meta.savedPosition || 0 }
     }
   }
 })

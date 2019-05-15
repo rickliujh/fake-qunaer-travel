@@ -35,7 +35,6 @@ export default new Router({
     if (savedPosition) {
       return savedPosition
     } else {
-      console.log(from.meta.keepAlive)
       if (from.meta.keepAlive) {
         from.meta.savedPosition = document.body.scrollTop || document.documentElement.scrollTop
       }

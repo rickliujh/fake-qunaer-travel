@@ -1,0 +1,107 @@
+{
+  "ret": true,
+  "data": {
+    "swiperList": [{
+        "id": "0001",
+        "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20194/e0c5d91cb9b435518bb223b81b70874e.jpg_750x200_f2d5c66a.jpg"
+      },{
+        "id": "0002",
+        "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20194/cda2a455558c82c25f972c647c273289.jpg_750x200_701e05e2.jpg"
+      },{
+        "id": "0003",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1711/b5/4b2278b83092cb02.jpg_750x200_9a01c2af.jpg"
+      },{
+        "id": "0004",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1609/4d/3dc09bcc290f0c02.jpg_750x200_09c97d67.jpg"
+      }],
+    "iconsList": [{
+        "id": "0001",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+        "desc": "景点门票"
+      }, {
+        "id": "0002",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
+        "desc": "一日游"
+      }, {
+        "id": "0003",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png",
+        "desc": "杭州必游"
+      }, {
+        "id": "0004",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png",
+        "desc": "赏花踏青"
+      }, {
+        "id": "0005",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/17/99402a22ce4af302.png",
+        "desc": "印象西湖"
+      }, {
+        "id": "0006",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/75/eca3ce656c886502.png",
+        "desc": "千岛湖"
+      }, {
+        "id": "0007",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/47/c2b659e048b11602.png",
+        "desc": "杭州野生"
+      }, {
+        "id": "0008",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/b8/c5dcdb58deec2402.png",
+        "desc": "西溪湿地"
+      }, {
+        "id": "0009",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/e3/67df61427c8e1302.png",
+        "desc": "杭州宋城"
+      }],
+    "recommendList": [{
+        "id": "0001",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1903/e0/e0e0c6ca274ad49aa3.img.jpg_200x200_0f072efb.jpg",
+        "title": "西溪国家湿地公园·周家村",
+        "desc": "美若仙境，《非诚勿扰》取景地"
+      }, {
+        "id": "0002",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1901/8c/8c1d317bc954ce06a3.water.jpg_200x200_94fd133d.jpg",
+        "title": "宋城千古情",
+        "desc": "世界三大名秀之一，杭州宋城的灵魂"
+      }, {
+        "id": "0003",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1904/e3/e3df2462a8a8876fa3.water.jpg_200x200_2e9e4fe3.jpg",
+        "title": "杭州长乔极地海洋公园",
+        "desc": "模拟生态环境里与海洋动物亲密接触"
+      }, {
+        "id": "0004",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/201405/27/8211cadd5d9fefeaa044c5b7eefc695d.jpg_200x200_38791bd1.jpg",
+        "title": "千岛湖",
+        "desc": "亲近大自然，放飞心情"
+      }, {
+        "id": "0005",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1904/68/6805ed3571d39a5ca3.img.jpg_200x200_fd85ad47.jpg",
+        "title": "杭州乐园",
+        "desc": "这里最近很火哦，好多人都在点评它呢！"
+      }],
+    "weekendList": [{
+        "id": "0001",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1811/52/b6776b49d27025.jpg_r_640x214_35ae205c.jpg",
+        "title": "美丽普陀山",
+        "desc": "人间仙境杭州，佛教圣地普陀山等你来玩！在这里静心接收佛家的洗礼，用心感受佛文化"
+      }, {
+        "id": "0002",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/4e/3e87ee62e59cdb.jpg_r_640x214_fe6cc902.jpg",
+        "title": "杭州必打卡",
+        "desc": "杭州，前世今生与你有一场美丽约会"
+      }, {
+        "id": "0003",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/9f/7d45cc38259e0.jpg_r_640x214_156f4299.jpg",
+        "title": "承载杭城的历史之地",
+        "desc": "饱经沧桑的地方诉述着这座城的段段衷肠"
+      }, {
+        "id": "0004",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/bc/83feb2e003d0dd.jpg_r_640x214_0b7269b8.jpg",
+        "title": "杭州多样乐园",
+        "desc": "这个周末终于可以陪宝贝去玩耍啦"
+      }, {
+        "id": "0005",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/c1/1178c5696fcf57.jpg_r_640x214_a69542c6.jpg",
+        "title": "杭州江南古镇",
+        "desc": "古镇岂只有新叶？悠闲出游杭州古镇"
+      }]
+  }
+}
